@@ -1,7 +1,11 @@
 package eu.tutorials.coffeemachine
 
 fun main(){
-    makeCoffee(2, "Jimmy");
+    println("Who is this coffee for?")
+    var name= readln()
+    println("How many pieces of sugar do you want?")
+    var sugarCount= readln().toInt()
+    makeCoffee(sugarCount, name);
 }
 
 fun makeCoffee(sugarCount: Int, name: String) {
